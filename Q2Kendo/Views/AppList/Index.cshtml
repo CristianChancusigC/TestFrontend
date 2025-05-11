@@ -8,7 +8,7 @@
 
 
 @section scripts {
-
+    @*Creation of templates, to display the invitations*@
     <script type="text/x-kendo-template" id="template">
           <div class="app-card">
             <div class="circle-app">#: appAvatar #</div>
@@ -32,7 +32,7 @@
                         pageable: true,
             });
 
-            // Change state
+            // Functionality to change the status of the invitation declined or approved
             $(document).on("click", ".invite-btn", function () {
                 const $btn = $(this);
                 if ($btn.hasClass("declined")) {
