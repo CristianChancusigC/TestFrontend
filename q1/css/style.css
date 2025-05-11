@@ -11,3 +11,11 @@ body {
   margin: 0;
   padding: 20px;
 }
+
+.time-cell {
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(173, 216, 230, 0.343);
+  }
+}

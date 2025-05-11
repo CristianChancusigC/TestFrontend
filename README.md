@@ -20,18 +20,15 @@ this repository contains two completed technical exercises using **Kendo UI**, J
 - jQuery
 - Kendo UI (Trial version)
 - CSS3 + Flexbox
-- Bootstrap 4 (Q1 only)
+- Bootstrap 4
 
 ---
 
 ## How to Run
 
 1. Clone this repo or download the ZIP
-2. Open the `.sln` file in **Visual Studio**
-3. Make sure Kendo UI trial is linked
-4. Run each project individually:
-   - **Q1TimeTracker** → `~/Home/Index`
-   - **Q2AppListView** → `~/AppList/Index`
+2. Make sure Kendo UI trial is linked
+3. Run each project individually:
 
 ---
 
@@ -57,19 +54,18 @@ Responsive app cards built with **Kendo ListView** and Flexbox.
 
 ### ✅ Features:
 
-- Responsive layout with Flexbox (no Bootstrap grid)
+- Responsive layout with Flexbox
 - Minimum 10 apps with unique color themes and logos
 - Dynamic button:
   - ✅ "Invite Selected" → turns blue with check icon
   - ❌ "Invite Declined" → turns red and updates label
-- Public logos via CDN (e.g., Facebook, Spotify, Netflix)
+- Public logos (e.g., Facebook, Spotify, Netflix)
 - Accessibility-friendly and visually clean
 
 ---
 
 ## 👨‍💻 Author
 
-**Cristian Chancusig**  
-Developer focused on frontend/backend development, UX/UI improvements, and practical web solutions.
+**Cristian Chancusig**
 
 ---
