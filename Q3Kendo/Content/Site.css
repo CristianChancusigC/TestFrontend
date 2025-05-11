@@ -1,0 +1,161 @@
+﻿/* Set padding to keep content from hitting the edges */
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: aliceblue
+}
+
+/*My Styles*/
+
+#appListView {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.k-listview-content {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.app-card {
+    flex: 1 1 300px;
+    max-width: 300px;
+    height: 250px;
+    margin: 5px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+    .app-card .circle-app {
+        width: 60px;
+        height: 100px;
+        background: #007bff;
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        border: 5px solid lightblue;
+    }
+
+.textDetails {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.invite-btn {
+    width: 75%;
+    margin-top: 10px;
+}
+
+.card-approved {
+    background-color: cornflowerblue;
+}
+
+.card-declined {
+    background-color: palevioletred;
+}
+
+.contAppName {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.app-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+
+/*App Colors*/
+.bg-fb {
+    background-color: #1877F2;
+    color: aliceblue;
+}
+
+.bg-ig {
+    background-color: #E1306C;
+    color: aliceblue;
+}
+
+.bg-yt {
+    background-color: #ff0000;
+    color: aliceblue;
+}
+
+.bg-sp {
+    background-color: #1db954;
+    color: aliceblue;
+}
+
+.bg-li {
+    background-color: #0077b5;
+    color: aliceblue;
+}
+
+.bg-tw {
+    background-color: #1da1f2;
+    color: aliceblue;
+}
+
+.bg-am {
+    background-color: #ff9900;
+    color: aliceblue;
+}
+
+.bg-nf {
+    background-color: #e50914;
+    color: aliceblue;
+}
+
+.bg-ub {
+    background-color: #000000;
+    color: aliceblue;
+}
+
+.bg-wa {
+    background-color: #25D366;
+    color: aliceblue;
+}
+
+.bg-pv {
+    background-color: #00A8E1;
+    color: aliceblue;
+}

@@ -1,5 +1,6 @@
 let selectedCell = null;
 
+// Function to get the current week dates and format them starting from Sunday
 function getCurrentWeek() {
   const today = new Date();
   const week = [];
@@ -16,6 +17,7 @@ function getCurrentWeek() {
   return week;
 }
 
+// Function to render the table header with the current week dates
 function renderTableHead() {
   const days = getCurrentWeek();
   let headRow = `<tr class = text-center><th>#</th>`;
@@ -26,6 +28,7 @@ function renderTableHead() {
   $("#week-table-head").html(headRow);
 }
 
+// Function to render the table rows with empty cells
 function renderTableRow(rowCount = 12) {
   let rows = ``;
   for (let i = 0; i < rowCount; i++) {
@@ -38,10 +41,12 @@ function renderTableRow(rowCount = 12) {
   $("#week-table-body").html(rows);
 }
 
+// Function to generate a random job ID
 function generateRandomId(max) {
   return Math.floor(Math.random() * max);
 }
 
+// Function to calculate the total hours between start and finish time
 function calculateTime(startTime, finishTime) {
   const start = parseInt(startTime.split(":")[0]);
   const finish = parseInt(finishTime.split(":")[0]);
@@ -105,9 +110,11 @@ $("#decline-btn").click(function () {
 });
 
 $(document).ready(function () {
+  // Render the table header and rows on page load
   renderTableHead();
   renderTableRow(12);
 
+  // Initialize the modal
   $(document).on("click", ".time-cell", function () {
     const col = $(this).data("col");
     const today = new Date();
