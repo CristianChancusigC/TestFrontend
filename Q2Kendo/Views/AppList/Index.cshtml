@@ -1,0 +1,48 @@
+﻿@model List<Q2Kendo.Models.AppModel>
+
+<h2 class="text-center my-4">List of application invitations</h2>
+
+<div id="appListViewContainer" class="k-listview-container">
+    <div id="appListView"></div>
+</div>
+
+
+@section scripts {
+
+    <script type="text/x-kendo-template" id="template">
+          <div class="app-card">
+            <div class="circle-app">#: appAvatar #</div>
+        <img src="#: appLogo #" alt="#: appName #" class="app-logo mb-2" />
+          <p class="textDetails">#: appDetails #</p>
+            <button class="btn btn-sm btn-primary invite-btn">
+                <span class="k-icon k-font-icon k-i-checkmark mr-2"></span> Invite Selected
+            </button>
+            <div class="contAppName #:appColor#"> <h5>#: appName #</h5></div>
+          </div>
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#appListView").kendoListView({
+                dataSource: {
+                    data: @Html.Raw(Json.Serialize(Model)),
+                    pageSize: 5
+                },
+                template: kendo.template($("#template").html()),
+                        pageable: true,
+            });
+
+            // Change state
+            $(document).on("click", ".invite-btn", function () {
+                const $btn = $(this);
+                if ($btn.hasClass("declined")) {
+                    $btn.removeClass("declined btn-danger").html(`<span class="k-icon k-font-icon k-i-checkmark k-icon-64"></span> Invite Selected`).addClass("btn-primary");
+                    $btn.closest(".app-card").addClass("card-approved").removeClass("card-declined");
+                } else {
+                    $btn.addClass("declined btn-danger").removeClass("btn-primary").text("Invite Declined");
+                    $btn.closest(".app-card").addClass("card-declined").removeClass("card-approved");
+                }
+            });
+        });
+    </script>
+}

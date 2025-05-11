@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Test</title>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center my-5">
+      <h1>Schedule</h1>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead id="week-table-head"></thead>
+        <tbody id="week-table-body"></tbody>
+      </table>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="schedule-Modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title w-100 text-center" id="modal-date"></h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-5 text-center mx-2">
+                <input type="time" class="form-control" id="start-time" />
+                <label class="mt-1">Start</label>
+              </div>
+              <div class="col-12 col-md-5 text-center mx-2">
+                <input type="time" class="form-control" id="finish-time" />
+                <label class="mt-1">Finish</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Job ID:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="job-id"
+                placeholder="Enter numeric Job ID"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button id="decline-btn" class="btn btn-danger">Decline</button>
+            <button id="approve-btn" class="btn btn-success">Approve</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

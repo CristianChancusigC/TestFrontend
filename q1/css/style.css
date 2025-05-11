@@ -1,0 +1,13 @@
+.cell-approved {
+  border: 2px solid green !important;
+}
+
+.cell-declined {
+  border: 2px solid red !important;
+}
+
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
