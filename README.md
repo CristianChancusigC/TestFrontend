@@ -10,12 +10,14 @@ this repository contains two completed technical exercises using **Kendo UI**, J
 | -------- | ------------------------------------------------------------------------------------------------------------------ |
 | **Q1**   | Interactive working hours table with pop-up form and approval/rejection logic.                                     |
 | **Q2**   | Responsive invitation list using Kendo ListView, Flexbox, and dynamic button states with approval/rejection logic. |
+| **Q3**   | Q3 is similar to Q2, the difference is that in this project MVC 5 was used.                                        |
 
 ---
 
 ## Technologies Used
 
 - ASP.NET Core MVC (Microsoft.AspNetCore.Mvc)
+- ASP.NET MVC 5
 - JavaScript (ES6+)
 - jQuery
 - Kendo UI (Trial version)
